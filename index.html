@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#id {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+      }
+      .image-row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 40px;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 170px; /* Adjust size as needed */
+      height: 170;
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="main">
+        <div style="margin: 20px">
+          <img style="margin-top: 10px" src="../../../../../deme.png" alt="" />
+          <div
+            style="
+              gap: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 1100px;
+              margin-top: -20px;
+            "
+          >
+            <span style="">Work</span>
+            <span>About</span>
+            <span>Process</span>
+            <span>Contact</span>
+            <img
+              style="height: 20px; width: 20px"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      style="display: flex; align-items: center; justify-content: center"
+    >
+    <img src="../../../../../fram.png" alt="">
+    
+</div>
+<div style="margin: 140px;"><h1 style="">Featured Work</h1>
+    <p style=" font-size: 16px;font-weight: 400;">I'm a user experience researcher and designer. I'm currently a PhD student in Human-Computer Interaction at Stanford University, where I work with James Landay and other amazing people in the HCI Group. My research focuses on understanding how people interact with AI systems, with the goal of designing more transparent, trustworthy, and equitable AI technologies. Before coming to Stanford, I worked as a UX designer and researcher at various tech companies and startups, including Google, Airbnb, and the MIT Media Lab. I'm also passionate about diversity and inclusion in tech, and have led several initiatives to promote equity and representation for underrepresented groups in the industry.</p>
+      </div>
+
+<div style="margin:140px;">
+    <h1>My Process</h1>
+</div>
+<div class="image-row">
+    <div class="image-item">
+      <img src="../../../../../card.png" alt="Image 1">
+      <div>Research</div>
+    </div>
+    <div class="image-item">
+        <img src="../../../../../card.png" alt="Image 1">
+        <div>Research</div>
+      </div>
+      <div class="image-item">
+        <img src="../../../../../card.png" alt="Image 1">
+        <div>Research</div>
+      </div>
+      <div class="image-item">
+        <img src="../../../../../card.png" alt="Image 1">
+        <div>Research</div>
+      </div>
+      <div class="image-item">
+        <img src="../../../../../card.png" alt="Image 1">
+        <div>Research</div>
+      </div>
+  </div>
+  <div style="margin: 90px;">
+<h1>Get in Touch</h1>
+<div style="height: 50px; width: 500px;background-color: rgb(247, 236, 236);border-radius: 9px;align-items: center;justify-content:center;display: flex;">Name</div>
+  
+<div style="height: 50px; width: 500px;background-color: rgb(235, 225, 225);border-radius: 9px;align-items: center;
+justify-content:center;display: flex;margin-top: 10px;">Email address</div>
+
+
+<div style="height: 200px; width: 500px;background-color: rgb(235, 225, 225);border-radius: 9px;align-items: center;
+justify-content:center;display: flex;margin-top: 10px;">Email address</div>
+</div>
+</div>
+
+
+</body>
+</html>
